@@ -1,0 +1,37 @@
+<div class='most_favourites'> 
+  <h2 class='text-center'>Itinerari Preferiti</h2>
+  <div class="container-fluid" style="margin-top: 10px">
+    <div class="table-row header">
+      <div class="wrapper attributes">
+        <div class="wrapper title-comment-module-reporter">
+          <div class="wrapper title-comment">
+            <div class="column title">Titolo</div>
+            <div class="column comment">Descrizione</div>
+          </div>
+          <div class="wrapper module-reporter">
+            <div class="column reporter">Utente</div>
+          </div>
+        </div>
+        <div class="wrapper status-owner-severity">
+          <div class="wrapper status-owner">
+            <div class="column status">Difficolta'</div>
+            <div class="column owner">Distanza</div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper icons">
+        <div title="Watch" class="column watch">
+          <span class="glyphicon glyphicon-eye-open"></span>
+        </div>
+        <div title="Add comment" class="column add-comment">
+          <span class="glyphicon glyphicon-comment"></span>
+        </div>
+      </div>
+      <div class="wrapper dates">
+        <div class="column date">Creata</div>
+        <div class="column date">Ultima Modifica</div>
+      </div>
+    </div>
+    <%= render partial: "shared/intro_page/most_favourites_routes", collection: routes, as: :route %>
+  </div>
+</div>

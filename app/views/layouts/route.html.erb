@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=@content.name%></title>
+    <meta name="turbolinks-cache-control" content="no-cache">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_link_tag 'application' %>
+  </head>
+
+  <body>
+    <%= render "shared/navbar"%>
+    <div class='container-fluid'>
+      <div class='row-fluid'>
+        <div class='col-md-1'>
+          <%= render partial: "shared/route/name", locals: {title: @content.name}%>
+        </div>
+        <div class='col-md-10 offset-md-1'>
+          <div class='route-main'>
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= render 'shared/profile'%>
+    <%= yield(:after_load) %>
+  </body>
+</html>

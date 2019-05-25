@@ -1,0 +1,16 @@
+<div class="route-sidebar">
+  <ul>
+    <%= link_to home_route_path(@route.id) do %>
+      <li class="sidebar-item home" title="Home"><i class="fa fa-home"></i></li>
+    <% end %>
+    <%= link_to data_route_path(@route.id) do %>
+      <li class="sidebar-item data" title="Profile"><i class="fa fa-user"></i></li>
+    <% end %>
+    <%= link_to comments_route_path(@route.id) do %>
+      <li class="sidebar-item comments" title="Inbox"><i class="fa fa-inbox"></i></li>
+    <% end %>
+  </ul>
+</div>
+
+<%= javascript_pack_tag "route.js" %>
+

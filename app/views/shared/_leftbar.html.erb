@@ -1,0 +1,13 @@
+<div class="leftbar">
+<% @countries.each do |c| %>
+  <ul>
+  <% c.regions.each do |r|%>
+    <li class="regions-list">
+      <%= link_to(region_path(r)) do %>
+        <p class="regions-name"><%= r.name %></p>
+      <%end%>
+    </li>
+  <% end%>
+  </ul>
+<% end %>
+</div>

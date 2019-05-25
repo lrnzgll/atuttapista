@@ -1,0 +1,7 @@
+<div class="container-fluid cards">
+  <div class="row">
+    <%= cache @intro_page_content.routes_by_region do %>
+      <%= render partial: "shared/intro_page/routes_by_region", collection: regions, as: :region %>
+    <% end %> 
+  </div>
+</div>

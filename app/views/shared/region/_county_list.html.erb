@@ -1,0 +1,21 @@
+<%= link_to county_path(county[1]) do %>
+  <div class="table-row">
+    <div class="wrapper attributes">
+      <div class="wrapper title-comment-module-reporter">
+        <div class="wrapper title-comment">
+          <div class="column title"><%=county[0]%></div>
+          <div class="column comment"><%=county[1]%></div>
+        </div>
+        <div class="wrapper module-reporter">
+          <div class="column reporter"><%=county[2]%></div>
+        </div>
+      </div>
+      <div class="wrapper status-owner-severity">
+        <div class="wrapper status-owner">
+          <div class="column status"><span class="label label-primary"><%=county[0]%></span></div>
+          <div class="column owner"><%=county[0]%></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

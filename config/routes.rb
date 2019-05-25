@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  require "sidekiq/web"
+  mount Sidekiq::Web => '/sidekiq'
+  root to: 'homes#home'
+  resources :regions
+  resources :counties
+  resources :routes do
+    member do
+      get 'home'
+      get 'data'
+      get 'comments'
+    end
+  end
+  get '/contact', to: 'homes#contact' 
 end
