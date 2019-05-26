@@ -1,3 +1,5 @@
-<section class='selected_regions'>
-  <%= render partial: "selected_regions/region", collection: @content.selected_regions, as: :region %>
+<section class='selected_regions_wrapper'>
+  <div class='selected_regions'>
+    <%= render partial: "selected_regions/region", collection: @content.selected_regions, as: :region %>
+  </div>
 </section>

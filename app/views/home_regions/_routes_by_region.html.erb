@@ -1,0 +1,8 @@
+<%= link_to region_path(region["id"]) do %>
+  <div class="region-card" style="background-image: url(<%= asset_pack_path "media/stylesheets/images/regions/#{region['slug'].downcase}.jpg"%>)">
+    <div class="card-description">
+      <h2><%= region['name'] %></h2>
+    </div>
+  </div>
+<% end %>
+

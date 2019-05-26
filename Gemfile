@@ -33,6 +33,7 @@ gem 'pry', '~> 0.12.2'
 gem 'friendly_id', '~> 5.2.4'
 gem 'acts_as_votable', '~> 0.12.0'
 gem "algoliasearch-rails"
+gem 'pluck_all'
 
 
 group :development do

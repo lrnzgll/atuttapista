@@ -1,0 +1,24 @@
+.featured_routes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.featured_route{
+  background-color: rgba(67, 175, 238, 0.1);
+  flex-basis: 25%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+  color: black;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+  text-transform: uppercase;
+  min-width: 300px;
+}
+.featured_routes_wrapper{
+  background-color: rgba(67, 175, 238, 0.2);
+  min-height: 400px;
+  padding: 30px;
+}
