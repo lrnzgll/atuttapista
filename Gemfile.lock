@@ -136,8 +136,6 @@ GEM
     ffi (1.11.1)
     figaro (1.1.1)
       thor (~> 0.14)
-    font-awesome-sass (5.6.1)
-      sassc (>= 1.11)
     forecast_io (2.0.2)
       faraday
       hashie
@@ -376,7 +374,6 @@ DEPENDENCIES
   factory_bot_rails
   faker
   figaro
-  font-awesome-sass (~> 5.6.1)
   forecast_io
   friendly_id (~> 5.2.4)
   geocoder
