@@ -1,0 +1,10 @@
+<%= link_to route_path(route.id) do %>
+  <tr class='row_favourite_routes'>
+      <td data-label="Name"><%= route.name %></td>
+      <td data-label="Location">Bari</td>
+      <td data-label="Distance"><%="#{route.distance} km "%></td>
+      <td data-label="Kinds"><%= route.kinds.map(&:name).join(', ') %></td>
+      <td data-label="Difficulty"><%= route.difficulty  %></td>
+      <td data-label="User"><%= route.user.name %></td>
+  </tr>
+<% end %>

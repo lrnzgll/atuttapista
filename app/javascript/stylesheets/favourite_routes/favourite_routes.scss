@@ -1,6 +1,6 @@
 @media screen and (min-width: 601px){
   .favourite_routes {
-    padding: 50px;
+    padding: 40px;
     background-color: rgba(67, 175, 238, 0.2);
   }
 }
@@ -23,6 +23,11 @@ table tr {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   padding: .35em;
+  &:hover{
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background-color: rgba(67, 175, 238, 0.2);
+  }
 }
 
 table th,
@@ -37,6 +42,15 @@ table th {
   text-transform: uppercase;
   background-color:rgba(67, 175, 238, 0.4);
 }
+
+.distance-route-home{
+  width: 10%;
+}
+
+.difficulty-route-home{
+  width: 15%;
+}
+
 
 @media screen and (max-width: 600px) {
   table {
