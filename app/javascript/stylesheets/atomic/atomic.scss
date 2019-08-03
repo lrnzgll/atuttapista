@@ -1,3 +1,8 @@
+$background-light: #949396;
+$background-normal: #4C4B63;
+$success: #84A07C;
+$warning: #F6AE2D;
+$danger: #F26419;
 .pos,
 .pos-r {
   position: relative;
@@ -914,4 +919,8 @@
 }
 .cur-t {
   cursor: text;
+}
+.responsive{
+	width: 100%;
+	height: auto;
 }

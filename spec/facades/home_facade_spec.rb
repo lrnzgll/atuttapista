@@ -54,10 +54,10 @@ RSpec.describe Home::HomeFacade do
 
   describe '#featured_routes' do
     context 'when called' do
-      it 'returns an array' do
+      xit 'returns an array' do
         expect(subject.featured_routes).to be_an(Array)
       end
-      it 'returns hashes with "name" and "username" as keys' do
+      xit 'returns hashes with "name" and "username" as keys' do
         hash = subject.featured_routes[0]
         expect(hash).to be_an(Hash)
         expect(hash.keys).to eq(["name", "id", "username"])

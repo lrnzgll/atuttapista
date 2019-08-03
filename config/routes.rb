@@ -12,5 +12,7 @@ Rails.application.routes.draw do
       get 'comments'
     end
   end
-  get '/contact', to: 'homes#contact' 
+  get '/contact', to: 'homes#contact'
+  post '/', to: 'homes#search'
+  get '/:id/dashboard', to: 'dashboards#home', as: :user_dashboard
 end

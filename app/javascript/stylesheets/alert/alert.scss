@@ -1,0 +1,27 @@
+.flash-message {
+  z-index: 10;
+	position: relative;
+}
+.flash-right {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	border-radius: 10px;
+	p{
+		color: white;
+	}
+	figure{
+		margin: 10px;
+	}
+}
+.chat-text{
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0;
+}
+.flash-alert{
+  background-color: rgba(200,2,2,0.8); 
+}
+.flash-notice{
+  background-color: rgba(2,2,200,.8); 
+}

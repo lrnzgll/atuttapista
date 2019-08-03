@@ -12,6 +12,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
+    "rails-ujs": "^5.2.3",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",

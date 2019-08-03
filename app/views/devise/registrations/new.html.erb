@@ -1,28 +1,20 @@
-<div class= 'full-height'>
-  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= f.error_notification %>
-    <div class="devise-title">Registrazione</div>
-    <div class="form-inputs">
-      <%= f.input :username,
-              label: 'Nome utente', 
-              required: true,
-              autofocus: true,
-              input_html: { autocomplete: "username" }%>
-      <%= f.input :email,
-                  required: true,
-                  autofocus: true,
-                  input_html: { autocomplete: "email" }%>
-      <%= f.input :password,
-                  required: true,
-                  input_html: { autocomplete: "password" } %>
-      <%= f.input :password_confirmation,
-                  label: 'Conferma password', 
-                  required: true,
-                  input_html: { autocomplete: "conferma password" } %>
+<div class='devise-background'>
+  <div class="devise-container">  
+    <div class="devise-panel" id="signup">
+      <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%=f.error_notification %>
+        <h2 class="text-center">Iscriviti</h2>
+        <div class="form-inputs devise-inputs">
+          <%=f.input :username, required: true,autofocus: true, label: "Username", input_html: {autocomplete: "username"}%>
+          <%=f.input :email, required: true,autofocus: true, input_html: {autocomplete: "email"}%>
+          <%=f.input :password,required: true, hint: ("almeno #{@minimum_password_length} caratteri" if @minimum_password_length), input_html: {autocomplete: "new-password"}%>
+          <%=f.input :password_confirmation, required: true, label: "Conferma la tua password", input_html: {autocomplete: "new-password"}%>
+          </div>
+        <div class="form-actions devise-button-class"> 
+          <%=f.button :submit, "Iscriviti", class: "devise-button"%>
+        </div>
+      <% end %>
+      <%= link_to t(".sign_in", default: "Login?"), new_user_session_path, class: "navbar-wagon-link" %>
     </div>
-
-    <div class="actions">
-      <%= f.button :submit, "Invia" %>
-    </div>
-  <% end %>
+  </div>
 </div>

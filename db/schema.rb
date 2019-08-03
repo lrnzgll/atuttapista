@@ -19,12 +19,11 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
     t.string "address1"
     t.string "address2"
     t.string "postal_code"
+    t.string "town"
     t.float "latitude"
     t.float "longitude"
-    t.bigint "town_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["town_id"], name: "index_address_locations_on_town_id"
   end
 
   create_table "addresses", force: :cascade do |t|
@@ -44,6 +43,7 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
     t.bigint "region_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_counties_on_name", unique: true
     t.index ["region_id"], name: "index_counties_on_region_id"
   end
 
@@ -107,6 +107,7 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["country_id"], name: "index_regions_on_country_id"
+    t.index ["slug"], name: "index_regions_on_slug", unique: true
   end
 
   create_table "route_locations", force: :cascade do |t|
@@ -148,12 +149,17 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
 
   create_table "towns", force: :cascade do |t|
     t.string "name"
-    t.float "latitude"
-    t.float "longitude"
+    t.string "slug"
+    t.string "zone"
+    t.boolean "capoluogo"
+    t.string "region_name"
+    t.string "plate_slug"
+    t.integer "population"
     t.bigint "county_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["county_id"], name: "index_towns_on_county_id"
+    t.index ["slug"], name: "index_towns_on_slug", unique: true
   end
 
   create_table "users", force: :cascade do |t|
@@ -162,10 +168,15 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "username"
-    t.boolean "moderator"
+    t.boolean "moderator", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -184,7 +195,6 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
     t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope"
   end
 
-  add_foreign_key "address_locations", "towns"
   add_foreign_key "addresses", "address_locations"
   add_foreign_key "counties", "regions"
   add_foreign_key "county_routes", "counties"

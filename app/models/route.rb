@@ -5,6 +5,7 @@ class Route < ApplicationRecord
   has_many :region_routes, inverse_of: :route, dependent: :destroy
   has_many :kinds,inverse_of: :route, dependent: :destroy
   has_many :surfaces,inverse_of: :route, dependent: :destroy
+  has_many :county_routes, inverse_of: :route, dependent: :destroy
   has_many :route_locations,inverse_of: :route, dependent: :destroy
   has_many :regions, through: :region_routes
 
