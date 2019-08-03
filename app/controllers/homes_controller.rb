@@ -1,14 +1,14 @@
-class HomesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :contact]
+# frozen_string_literal: true
 
+class HomesController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:home, :contact, :search]
+  after_action :skip_authorization, only: [:home]
+  
   def home
     @content ||= Home::HomeFacade.new
   end
 
-  def contact
-  end
-
   def search
-    @search_content ||= Home::SearchFacade.new
+    head 200
   end
 end

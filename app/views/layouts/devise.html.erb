@@ -4,16 +4,15 @@
     <title>A tutta pista</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-  
     <%= javascript_pack_tag 'application' %>
-    <%= stylesheet_link_tag 'application' %>
   </head>
 
   <body>
   <%= render "shared/navbar"%>
-  <div class="devise-background" style="background-image: linear-gradient(rgba(250,250,250,0.6),rgba(250,250,250,0.4)), url('<%= image_path "login.jpg" %>');">
+    <% if flash.keys.one?('alert') %>
+      <%= render partial: 'shared/flash_message', locals: {flash: flash} %>
+    <% end %>
     <%= yield %>
-  </div>
   </div>
   </body>
 </html>

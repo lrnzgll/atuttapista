@@ -1,8 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe AddressLocation, type: :model do
-  let(:varese){ build_stubbed(:town) }
-  subject { described_class.new(town: varese, address1: "Via Milano, 2", postal_code: '22030') }
+  subject { described_class.new(town: 'Varese', address1: "Via Milano, 2", postal_code: '22030', ) }
 
 
   it "is valid with valid attributes" do
@@ -11,6 +10,11 @@ RSpec.describe AddressLocation, type: :model do
 
   it "is not valid without an address" do
     subject.address1 = nil
+    expect(subject).to_not be_valid
+  end
+
+  it "is not valid without a town" do
+    subject.town = nil
     expect(subject).to_not be_valid
   end
   
@@ -22,6 +26,4 @@ RSpec.describe AddressLocation, type: :model do
   describe "#destroy" do
     it { expect(subject).to have_many(:addresses).dependent(:destroy) }
   end
-
-  it { should belong_to :town }
 end

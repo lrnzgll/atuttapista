@@ -6,7 +6,7 @@ gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma', '~> 3.11'
-gem 'rails', '6.0.0.rc1'
+gem "rails"
 gem 'redis', '~> 4.0'
 gem 'sass-rails', '~> 5.0'
 gem 'autoprefixer-rails'
@@ -33,6 +33,13 @@ gem 'friendly_id', '~> 5.2.4'
 gem 'acts_as_votable', '~> 0.12.0'
 gem "algoliasearch-rails"
 gem 'pluck_all'
+gem 'cloudinary'
+gem 'gravatar_image_tag'
+gem 'turbolinks', '~> 5.2.0'
+gem "pundit"
+gem 'activerecord-import'
+gem 'activerecord-postgis-adapter'
+
 
 
 group :development do
@@ -43,6 +50,7 @@ group :development do
   gem 'faker'
   gem 'betterlorem'
   gem 'awesome_print'
+  gem 'spreadsheet'
 end
 
 group :development, :test do

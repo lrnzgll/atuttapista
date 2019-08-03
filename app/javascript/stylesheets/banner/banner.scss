@@ -1,6 +1,42 @@
 .banner{
-  height: calc(100vh - 57px);
-  background-image: url("images/banner/background-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: auto;
+  min-height: 654px;
+  padding: 50px;
+	background-image: url('https://res.cloudinary.com/lrnzgll/image/upload/c_scale,w_1920/v1563628644/cycling-979583_rtl0jm.jpg');
+	background-size: cover;
+	background-position: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-input {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;	
+  font-size: 10px;
+  a{
+    color: white;
+  }
+  h1{
+    color: white !important;
+    text-shadow: 2px 2px black;
+    line-height: 1;
+  }
+  span:first-child{
+    font-size: 30px;
+  }
+  span:last-child{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 25px;
+  }
+}
+
+.banner-title{
+	color: white;
+}
+
+@media (max-width: 1500px) {
+	.banner{ height: 300px; }
 }
