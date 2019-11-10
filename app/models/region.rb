@@ -7,7 +7,7 @@ class Region < ApplicationRecord
   has_many :counties, dependent: :destroy
 
   has_many :routes, through: :region_routes
-  has_many :towns, through: :counties
+  has_many :towns, dependent: :destroy
 
   validates :slug, presence: true
   validates :name, presence: true

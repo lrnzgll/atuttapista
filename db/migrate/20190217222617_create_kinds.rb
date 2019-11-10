@@ -1,7 +1,7 @@
 class CreateKinds < ActiveRecord::Migration[5.2]
   def change
     create_table :kinds do |t|
-      t.string :type
+      t.string :name
       t.references :route, foreign_key: true
 
       t.timestamps

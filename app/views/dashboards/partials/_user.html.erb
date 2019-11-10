@@ -1,0 +1,17 @@
+<div class='ta-c'>
+  <h2>PROFILO</h2> 
+</div>
+<hr>
+<div>
+  <p>NickName: <%= @content.user.username %></p> 
+</div>
+<div>
+  <p>Email: <%= @content.user.email %></p>
+</div>
+<div id="profile-map" 
+  data-marker="<%= @content.user_coordinates.to_json %>"
+  data-mapbox-api-key="<%= Rails.application.credentials[:mapbox][:geocoding_public_api] %>"
+></div>
+<span class='ta-nd pr-2 text-white b-1 r-1 pos-a'>
+  <%= link_to 'Modifica >>', root_path%>
+</span>

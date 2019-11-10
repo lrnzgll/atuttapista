@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 ruby '2.6.0'
 
 gem 'bootsnap', require: false
-gem 'devise'
+gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma', '~> 3.11'
-gem "rails"
+gem 'rails', '~> 6.0'
 gem 'redis', '~> 4.0'
 gem 'sass-rails', '~> 5.0'
 gem 'autoprefixer-rails'
@@ -17,8 +17,10 @@ gem 'webpacker'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'simple_discussion'
-gem "actionpack-page_caching"
 gem "geocoder"
+gem 'activerecord-postgis-adapter'
+gem "actionview-component"
+gem "rgeo-proj4"
 gem 'sidekiq'
 gem 'sidekiq-failures', '~> 1.0'
 gem "d3-rails"
@@ -38,9 +40,8 @@ gem 'gravatar_image_tag'
 gem 'turbolinks', '~> 5.2.0'
 gem "pundit"
 gem 'activerecord-import'
-gem 'activerecord-postgis-adapter'
-
-
+gem "roo", "~> 2.8.0"
+gem 'roo-xls'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

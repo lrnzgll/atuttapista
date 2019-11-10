@@ -4,7 +4,10 @@
     <title>A tutta pista</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
+
+
   </head>
 
   <body>
@@ -12,4 +15,5 @@
     <%= yield %>
     <%= content_for :render_async %>
   </body>
+  <%= javascript_pack_tag 'custom', defer:"defer" %>
 </html>

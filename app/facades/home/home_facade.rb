@@ -5,11 +5,7 @@ class Home::HomeFacade
   end
 
   def selected_regions
-    @selected_regions ||= Region.left_joins(:routes).group(:id).order(Arel.sql'COUNT(routes.id) DESC').limit(4).pluck_all(:name, :id)
-  end
-
-  def weather
-    @weather ||= Weather::CurrentWeather.new('43', '55')
+    @selected_regions ||= Region.left_joins(:routes).group(:id).order(Arel.sql'COUNT(routes.id) DESC').limit(4)
   end
 
   def featured_routes
@@ -17,6 +13,6 @@ class Home::HomeFacade
   end
 
   def routes_by_region
-    @routes_by_region ||= Region.order(name: :asc).pluck_all(:name, :id, :slug)
+    @routes_by_region ||= Region.order(name: :asc)
   end
 end

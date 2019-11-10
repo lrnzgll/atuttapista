@@ -14,27 +14,25 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "address_locations", force: :cascade do |t|
-    t.string "address1"
-    t.string "address2"
-    t.string "postal_code"
-    t.string "town"
-    t.float "latitude"
-    t.float "longitude"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+  enable_extension "postgis"
 
   create_table "addresses", force: :cascade do |t|
-    t.bigint "address_location_id"
     t.time "archived_at"
     t.string "addressable_type"
     t.bigint "addressable_id"
+    t.string "address1"
+    t.string "address2"
+    t.string "postal_code"
+    t.bigint "region_id"
+    t.bigint "county_id"
+    t.bigint "town_id"
+    t.geography "lonlat", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["address_location_id"], name: "index_addresses_on_address_location_id"
     t.index ["addressable_type", "addressable_id"], name: "index_addresses_on_addressable_type_and_addressable_id"
+    t.index ["county_id"], name: "index_addresses_on_county_id"
+    t.index ["region_id"], name: "index_addresses_on_region_id"
+    t.index ["town_id"], name: "index_addresses_on_town_id"
   end
 
   create_table "counties", force: :cascade do |t|
@@ -125,9 +123,10 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
     t.integer "difficulty"
     t.float "distance"
     t.string "gpx"
+    t.integer "views_counter", default: 0
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
     t.integer "cached_votes_total", default: 0
     t.integer "cached_votes_score", default: 0
     t.integer "cached_votes_up", default: 0
@@ -135,7 +134,7 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
     t.integer "cached_weighted_score", default: 0
     t.integer "cached_weighted_total", default: 0
     t.float "cached_weighted_average", default: 0.0
-    t.integer "views_counter", default: 0
+    t.index ["name"], name: "index_routes_on_name"
     t.index ["user_id"], name: "index_routes_on_user_id"
   end
 
@@ -149,17 +148,15 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
 
   create_table "towns", force: :cascade do |t|
     t.string "name"
-    t.string "slug"
-    t.string "zone"
-    t.boolean "capoluogo"
-    t.string "region_name"
-    t.string "plate_slug"
     t.integer "population"
     t.bigint "county_id"
+    t.bigint "region_id"
+    t.geography "lonlat", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["county_id"], name: "index_towns_on_county_id"
-    t.index ["slug"], name: "index_towns_on_slug", unique: true
+    t.index ["name"], name: "index_towns_on_name"
+    t.index ["region_id"], name: "index_towns_on_region_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -195,7 +192,6 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
     t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope"
   end
 
-  add_foreign_key "addresses", "address_locations"
   add_foreign_key "counties", "regions"
   add_foreign_key "county_routes", "counties"
   add_foreign_key "county_routes", "routes"
@@ -208,4 +204,5 @@ ActiveRecord::Schema.define(version: 2019_05_17_194313) do
   add_foreign_key "routes", "users"
   add_foreign_key "surfaces", "routes"
   add_foreign_key "towns", "counties"
+  add_foreign_key "towns", "regions"
 end

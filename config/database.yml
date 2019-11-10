@@ -17,8 +17,7 @@
 default: &default
   adapter: postgis
   encoding: unicode
-  postgis_extension: true
-  schema_search_path: public,postgis
+  schema_search_path: public
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>

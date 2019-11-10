@@ -5,6 +5,7 @@ class DashboardsController < ApplicationController
 
   def home
     authorize @user, policy_class: DashboardPolicy
+    @content = Dashboard::DashboardFacade.new(@user)
   end
 
   private

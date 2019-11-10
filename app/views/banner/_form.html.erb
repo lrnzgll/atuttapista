@@ -1,4 +1,6 @@
-<%= form_with url: root_path do |form| %>
-  <%= form.text_field :email, class:"banner-input" %>
-  <%= form.submit %>
+<%= form_with url: root_path, class: 'input-group' do |form| %>
+  <%= form.text_field :email, class:"form-control" %>
+  <div class='input-group-append'>
+    <%= form.submit class:"btn btn-sm btn--stripe" %>
+  </div>
 <% end %>

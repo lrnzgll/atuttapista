@@ -6,7 +6,7 @@ class Region::RegionFacade
   end
 
   def counties
-    @counties ||= County.where(region: @region).includes(:towns).order(name: :asc).group(:id).pluck(:name, :slug, Arel.sql('count(towns.id)'))
+    @counties ||= County.where(region: @region).includes(:towns).order(name: :asc).group(:id)
   end
 
   def favourite_routes

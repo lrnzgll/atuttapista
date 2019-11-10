@@ -1,8 +1,22 @@
 $background-light: #949396;
-$background-normal: #4C4B63;
+$background-normal: linear-gradient(90deg, rgba(68,79,137,1) 0%, rgba(0,66,117,0.95) 50%, rgba(45,52,92,.9) 100%);;
+$color-hover: linear-gradient(0deg, rgba(250,193,50,1) 0%, rgba(255,246,227,1) 100%);;
 $success: #84A07C;
 $warning: #F6AE2D;
 $danger: #F26419;
+
+hr{
+  border: 1px solid red;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+  text-decoration: none;
+  color: yellow;
+  }
+}
 .pos,
 .pos-r {
   position: relative;
@@ -29,8 +43,14 @@ $danger: #F26419;
 .r {
   right: 0;
 }
+.r-1{
+  right: 5px;
+}
 .b {
   bottom: 0;
+}
+.b-1 {
+  bottom: 5px;
 }
 .l {
   left: 0;
@@ -725,6 +745,12 @@ $danger: #F26419;
 .fz-xl {
   font-size: 36px;
 }
+.fz-xxl {
+  font-size: 72px;
+}
+.fz-xxxl {
+  font-size: 90px;
+}
 .va,
 .va-t {
   vertical-align: top;
@@ -760,6 +786,9 @@ $danger: #F26419;
 }
 .td-l {
   text-decoration: line-through;
+}
+.text-white{
+  color: white;
 }
 .tt,
 .tt-u {
@@ -852,8 +881,8 @@ $danger: #F26419;
 .bdcl-c {
   border-collapse: collapse;
 }
-.bdrs-0 {
-  border-radius: 0;
+.bdrs-5 {
+  border-radius: 5px;
 }
 .bdtrrs-0 {
   border-top-right-radius: 0;

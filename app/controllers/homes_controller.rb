@@ -6,9 +6,6 @@ class HomesController < ApplicationController
   
   def home
     @content ||= Home::HomeFacade.new
-  end
-
-  def search
-    head 200
+    @search = nil
   end
 end
