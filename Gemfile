@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.6.0'
+ruby '2.6.5'
 
 gem 'bootsnap', require: false
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
