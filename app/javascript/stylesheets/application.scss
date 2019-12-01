@@ -1,10 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 @import '/atomic/atomic.scss';
 @import '/navbar/navbar.scss';
-$fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '/simple_discussion/simple_discussion.scss';
 @import '/config/index.scss';
 @import '/banner/banner.scss';
 @import 'region/region.scss';
