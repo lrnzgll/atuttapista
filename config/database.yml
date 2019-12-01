@@ -84,3 +84,4 @@ production:
   database: atuttapista_production
   username: atuttapista
   password: <%= ENV['ATUTTAPISTA_DATABASE_PASSWORD'] %>
+  url: <%= ENV.fetch('DATABASE_URL', '').sub(/^postgres/, "postgis") %>
