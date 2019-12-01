@@ -1,17 +1,8 @@
 # frozen_string_literal: true
 
 class Route::RouteFacade
-  
+  attr_reader :route
   def initialize(route)
     @route = route
-  end
-
-  def name
-    @route.name
-  end
-
-  def description
-    @route.description
-  end
-  
+  end  
 end

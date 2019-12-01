@@ -1,0 +1,10 @@
+<tr class='text-white' data-link="<%= route_path(route.id) %>">
+    <td><%= route.name %></td>
+    <td><%= route.distance %> Km</td>
+    <td><%= route.kinds.map{|kind| kind.name } %></td>
+    <td><%= route.surfaces.map{|surface| surface.name } %></td>
+    <td><%= route.difficulty %></td>
+    <td><%= route.cached_votes_total %></td>
+    <td><%= route.views_counter %></td>
+</tr>
+

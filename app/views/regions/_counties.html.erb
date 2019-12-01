@@ -1,0 +1,10 @@
+<div class='county-card p-2 m-2'>
+  <div class='text-white ta-c'>
+    <h2><%= county.name %></h2>
+    <hr>
+    <div class='route-list ta-st'>
+      <h3>ITINERARI:</h3>
+      <%= render partial: 'county-routes', collection: county.routes, as: :route %>
+    </div>
+  </div>
+</div>

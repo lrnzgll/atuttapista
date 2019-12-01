@@ -1,5 +1,10 @@
 class Route < ApplicationRecord
-  
+  include AlgoliaSearch
+
+  algoliasearch do
+    attributes :name, :description
+  end
+
   acts_as_votable
 
   has_many :region_routes, inverse_of: :route, dependent: :destroy
@@ -21,5 +26,4 @@ class Route < ApplicationRecord
   def add_view
     RouteAddViewJob.perform_later(self.id)
   end
-
 end

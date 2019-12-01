@@ -1,0 +1,21 @@
+ <div class="region-routes">
+  <h1 class='ta-c'>Itinerari Preferiti</h1>
+  <div class='container-fluid'>
+    <table class="region-table-keywords p-3" cellspacing="0" cellpadding="0" data-controller='region-page'>
+      <thead class='region-table-header text-white'>
+        <tr>
+          <th class='w-column'><span>Itinerario</span></th>
+          <th class='xs-column'><span>Distanza</span></th>
+          <th class='m-column'><span>Tipo</span></th>
+          <th class='m-column'><span>Fondo</span></th>
+          <th class='s-column'><span>Difficolta'</span></th>
+          <th class='xs-column'><span>Preferito</span></th>
+          <th class='xs-column'><span>Visto</span></th>
+        </tr>
+      </thead>
+      <tbody class='region-table-body'>
+        <%= render partial: 'favourite_region_routes', collection: @content.favourite_routes, as: :route %>
+      </tbody>
+    </table>
+  </div>
+ </div> 

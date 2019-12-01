@@ -1,0 +1,17 @@
+<div class='search-page'>
+  <%= render partial: 'banner/form' %>
+  <div class='search-routes-container text-white bdrs-5' data-controller='load-search-results' data-load-search-results-query='<%= @query %>'>
+    <h1 class='ta-c'>ITINERARI</h1>
+    <hr>
+      <div class='ta-c m-3'>
+        <%= cl_image_tag("route-cartoon.png", width: 200, crop: "scale", class:'search-routes-img') %>
+      </div>
+        <div class='search-routes-list' data-target='load-search-results.tags'>
+          <%= render partial: 'shared/loader' %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <h1>qui</h1>
+</div>

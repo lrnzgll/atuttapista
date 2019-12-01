@@ -6,11 +6,17 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :trackable
   
   has_many :routes, dependent: :destroy
-  has_many :addresses, as: :addressable, dependent: :destroy
+  has_one :address, as: :addressable, dependent: :destroy
 
   validates :username, presence:true
 
   def name
     self.username
+  end
+
+  def user_coordinates
+    if self.address
+      return { lng: self.address.lonlat.lon, lat: self.address.lonlat.lat } 
+    end
   end
 end

@@ -1,0 +1,35 @@
+.search-page{
+  padding: 20px;
+}
+.search-routes-container{
+  margin-top: 40px;
+  background: $background-normal; 
+  padding: 40px;
+  box-shadow: 2px 1px rgba(68,79,137, 0.4);
+}
+.search-routes{
+  min-height: 500px;
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
+}
+.search-routes-img{
+	background-image: url('https://res.cloudinary.com/lrnzgll/image/upload/v1574084724/route-cartoon.png');
+	background-size: cover;
+	background-position: center;
+}
+.search-routes-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.route-card{
+  margin: 10px;
+  width: 200px;
+  height: 250px;
+  background-color: rgba(68,79,137,1); 
+  border-radius: 5px;
+  box-shadow: 2px 1px rgba(20,20,20,0.3);
+}

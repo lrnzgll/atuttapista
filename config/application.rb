@@ -20,9 +20,11 @@ module Atuttapista
     config.autoload_paths += %W(#{config.root}/app/facades #{config.root}/app/services)
     config.action_view.embed_authenticity_token_in_remote_forms = true
     config.active_job.queue_adapter = :sidekiq
+    config.i18n.available_locales = [:en, :it]
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
   end
 end
+ForecastIO.api_key = 'bdf96962a8e18c40a0fd1b8eded015eb'

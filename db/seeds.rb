@@ -141,16 +141,24 @@ class UpdateDatabase
       r.region_routes.build(route: r, region: Region.all.sample)
       r.county_routes.build(route: r, county: County.all.sample)
       r.route_locations.build(name: Faker::Name.name, description: BetterLorem.p(rand(3..20), true, true ), route_id: r.id)
-      Array.new(rand(1..4)) do
-        r.kinds.build(name: ["strada", "sentiero", "ciclopedonale", "ciclabile"].sample,  route_id: r.id)
-      end
-      Array.new(rand(1..4)) do
-        r.surfaces.build(name: ["asfalto", "misto", "ghiaia", "terra"].sample, route_id: r.id)
-      end
       routes << r
     end
     Route.import routes, recursive: true
     p 'routes created'
+    create_kinds_surfaces
+  end
+
+  def create_kinds_surfaces
+    Route.find_each do |r|
+      Array.new(rand(1..4)) do
+        f = r.kinds.new(name: ["strada", "sentiero", "ciclopedonale", "ciclabile"].sample,  route_id: r.id)
+        f.save if f.valid?
+      end
+      Array.new(rand(1..4)) do
+        m = r.surfaces.new(name: ["asfalto", "misto", "ghiaia", "terra"].sample, route_id: r.id)
+        m.save if m.valid?
+      end
+    end
   end
 end
 

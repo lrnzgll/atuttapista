@@ -1,36 +1,48 @@
 .banner{
   width: auto;
-  min-height: 654px;
+  min-height: calc(100vh - 70px);
   padding: 50px;
-	background-image: url('https://res.cloudinary.com/lrnzgll/image/upload/c_scale,w_1920/v1563628644/cycling-979583_rtl0jm.jpg');
 	background-size: cover;
-	background-position: left;
+	background-image: url('https://res.cloudinary.com/lrnzgll/image/upload/c_scale,q_auto:eco,w_1920/v1574071286/background-3.jpg');
+	background-position: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
+.banner-form-container{
+  position: relative;
+  width: 650px;
+  height: 70px;
+  margin: 0 auto;
+}
+
 .banner-input {
-  margin: 20px;
-  padding: 20px;
-  text-align: center;	
-  font-size: 10px;
-  a{
-    color: white;
-  }
-  h1{
-    color: white !important;
-    text-shadow: 2px 2px black;
-    line-height: 1;
-  }
-  span:first-child{
-    font-size: 30px;
-  }
-  span:last-child{
-    display: inline-block;
-    margin-top: 30px;
-    font-size: 25px;
-  }
+  position: absolute;
+  left: 0;
+  font-size: 26px;
+  width: 600px;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+  color: #2c2c2b;
+  border: 2px solid #666;
+  padding: 0 0 2px 15px;
+  height: 70px;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+.banner-submit {
+  position: absolute;
+  right: 0;
+  width: 165px;
+  border-radius: 0 11px 11px 0;
+  outline: none;
+  font-size: 27px;
+  padding: 0 20px 2px 20px;
+  height: 70px;
+  font-weight: bold;
 }
 
 .banner-title{

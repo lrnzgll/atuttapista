@@ -1,8 +1,9 @@
 class Dashboard::DashboardFacade
   attr_reader :user
 
-  def initialize(user)
+  def initialize(user, ip)
     @user = user
+    @ip = ip
   end
 
   def routes_count
@@ -10,17 +11,10 @@ class Dashboard::DashboardFacade
   end
 
   def region_routes_count
-    @region_routes_count ||= first_address.region.routes.count
+    #@region_routes_count ||= user_address.region.routes.count
   end
 
-  def user_coordinates 
-    @user_coordinates ||= { lng: first_address.lonlat.lon, lat: first_address.lonlat.lat }
+  def user_coordinates
+    @user_coordinates ||= (user.user_coordinates || Geocoder.user_coordinates(@ip))
   end
-
-  private
-
-  def first_address
-    @first_address ||= @user.addresses.first
-  end
-  
 end 

@@ -1,4 +1,8 @@
-
-<%= render partial: "shared/region/counties", locals: {counties: @content.counties }%>
-<%= render partial: "shared/intro_page/most_favourite_headers", locals: {routes: @content.favourite_routes }%>
-<%= render partial: "shared/intro_page/most_favourite_headers", locals: {routes: @content.new_routes }%>
+<div class='region-show'>
+  <% if @content.favourite_routes.any? %>
+    <%= render partial: "favourite_routes_of_region"%>
+  <% end %>
+  <div class='county-cards'>
+    <%= render partial: "counties", collection: @content.counties, as: :county %>
+  </div>
+</div>

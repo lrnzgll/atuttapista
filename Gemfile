@@ -42,6 +42,9 @@ gem "pundit"
 gem 'activerecord-import'
 gem "roo", "~> 2.8.0"
 gem 'roo-xls'
+gem 'inline_svg'
+gem 'rails-i18n'
+gem 'geocoder'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

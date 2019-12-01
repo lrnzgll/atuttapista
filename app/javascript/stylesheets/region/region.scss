@@ -1,0 +1,44 @@
+.region-routes{
+  margin: 10px auto;
+}
+.region-table-keywords{
+  thead{
+    border-bottom: 2px solid red;
+    table-layout: fixed;
+    width: 100%
+  }
+}
+.region-table-header{
+  tr:first-child{
+    background: $background-normal;
+    opacity: 1;
+  }
+  th {
+    font-size: 16px;
+  }
+}
+.region-table-body{
+  tr{
+    cursor: pointer;
+    background: $background-normal;
+    opacity: 0.9;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  td{
+    font-size: 15px;
+  }
+}
+.w-column {
+  min-width: 25%;
+}
+.m-column{
+  width: 20%;
+}
+.xs-column {
+  width: 8%;
+}
+.s-column {
+  width: 12%;
+}

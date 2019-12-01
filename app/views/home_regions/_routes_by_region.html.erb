@@ -1,6 +1,6 @@
 <%= link_to region_path(region["id"]), class:'home-card' do %>
   <div class="region-card">
-    <%= cl_image_tag(region["slug"], alt: region["name"], crop: "scale", class: 'region-card')%> 
+    <%= cl_image_tag(region["slug"], alt: region["name"], class: 'region-card')%> 
     <div class="card-description">
       <h2><%= region['name'] %></h2>
     </div>

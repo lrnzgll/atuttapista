@@ -13,6 +13,6 @@ Rails.application.routes.draw do
     end
   end
   get '/contact', to: 'homes#contact'
-  post '/', to: 'homes#search'
+  get '/search', to: 'homes#search', as: 'search_page'
   get '/:id/dashboard', to: 'dashboards#home', as: :user_dashboard
 end

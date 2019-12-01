@@ -1,0 +1,39 @@
+<div class='ta-c'>
+  <h2>METEO</h2> 
+</div>
+<hr>
+<div class='ta-c'>
+  <div class='container'>
+    <div data-controller="load-forecast" data-target="load-forecast.tags" data-load-forecast-request="<%= @request_id %>" data-load-forecast-ip="<%= @ip %>" class='row'>
+      <div class='col-xs-4'>
+        <%= render 'shared/loader' %>
+        <div class='weather-data m-3 ta-c'>
+          <p>Temperatura:°</p>
+          <p>Temperatura apparente:</p>
+          <p>Umidita':</p>
+          <p>Pressione:</p>
+          <p>uvIndex:</p>
+        </div>
+      </div>
+<div class='col-xs-8' style="margin: 20px auto;">
+  <div class='weather-grid'>
+    <% 6.times do %>
+      <div>
+        <%= render 'shared/small-loader' %>
+        <div class='weather-data m-3 ta-c'>
+          <p class='fz-sm'>...</p>
+          <p class='fz-sm'>Temperatura: °</p>
+          <p class='fz-sm'>Umidita':  %</p>
+          <p class='fz-sm'>Pressione:  Pa</p>
+          <p class='fz-sm'>uvIndex: </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+    </div>
+  </div>
+  <span class='ta-nd pr-2 text-white b-1 r-1 pos-a'>
+    <%= link_to 'Percorsi >>', root_path%>
+  </span>
+</div>

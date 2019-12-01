@@ -173,6 +173,9 @@ GEM
     httpclient (2.8.3)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
+    inline_svg (1.6.0)
+      activesupport (>= 3.0)
+      nokogiri (>= 1.6)
     io-like (0.3.0)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
@@ -190,8 +193,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    mapbox-gl-rails (1.5.0)
-      railties (>= 3.2)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (0.9.2)
@@ -259,6 +260,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.2.0)
       loofah (~> 2.2, >= 2.2.2)
+    rails-i18n (6.0.0)
+      i18n (>= 0.7, < 2)
+      railties (>= 6.0.0, < 7)
     railties (6.0.0)
       actionpack (= 6.0.0)
       activesupport (= 6.0.0)
@@ -441,10 +445,10 @@ DEPENDENCIES
   geocoder
   gon
   gravatar_image_tag
+  inline_svg
   jbuilder (~> 2.0)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
-  mapbox-gl-rails
   oj
   pg (~> 0.21)
   pluck_all
@@ -455,6 +459,7 @@ DEPENDENCIES
   rabl
   rails (~> 6.0)
   rails-controller-testing
+  rails-i18n
   redis (~> 4.0)
   render_async
   rgeo-proj4

@@ -5,3 +5,26 @@
   background-color: rgb(230,230,230);
   border-radius: 3px;
 }
+
+.weather-icon {
+  width: 200px;
+  height: 200px;
+}
+
+.weather-small-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.weather-data{
+  p {
+    font: 15px;
+    margin: 0;
+    }
+}
+
+.weather-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}

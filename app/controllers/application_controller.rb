@@ -5,12 +5,16 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   protect_from_forgery
   before_action :authenticate_user!
+  before_action :set_user_cookie
   after_action :verify_authorized, unless: :devise_controller?
 
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   private
 
+  def set_user_cookie
+    cookies.signed[:user_id] = current_user.id if current_user
+  end
   def configure_permitted_parameters
     attributes = [:username]
     devise_parameter_sanitizer.permit(:sign_up, keys: attributes)
