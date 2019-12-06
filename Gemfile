@@ -5,7 +5,7 @@ gem 'bootsnap', require: false
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'rails', '~> 6.0'
 gem 'redis', '~> 4.0'
 gem 'sass-rails', '~> 5.0'
