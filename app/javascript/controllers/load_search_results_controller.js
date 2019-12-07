@@ -8,7 +8,7 @@ export default class extends Controller {
     console.log('here')
     let thisController = this;
     var client = algoliasearch('2QQ3FJHJ3M', '2849d3d9a9f1444d53a00e16a2bcfa73');
-    var index = client.initIndex('Route');
+    var index = client.initIndex('Route_development');
     index.search(this.data.get('query'), { hitsPerPage: 50, page: 0 })
       .then(function searchDone(content) {
       if (content.hits.length > 0) {
