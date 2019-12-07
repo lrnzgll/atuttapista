@@ -1,23 +1,23 @@
 {
-  "application.js": "/packs/js/application-a2b6a78f686f7869b5f2.js",
-  "application.js.map": "/packs/js/application-a2b6a78f686f7869b5f2.js.map",
-  "custom.js": "/packs/js/custom-ccfe610dc14db674efd0.js",
-  "custom.js.map": "/packs/js/custom-ccfe610dc14db674efd0.js.map",
+  "application.js": "/packs/js/application-3b552934a2a120b51270.js",
+  "application.js.map": "/packs/js/application-3b552934a2a120b51270.js.map",
+  "custom.js": "/packs/js/custom-f446e802444aa64b3e51.js",
+  "custom.js.map": "/packs/js/custom-f446e802444aa64b3e51.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-a2b6a78f686f7869b5f2.js"
+        "/packs/js/application-3b552934a2a120b51270.js"
       ],
       "js.map": [
-        "/packs/js/application-a2b6a78f686f7869b5f2.js.map"
+        "/packs/js/application-3b552934a2a120b51270.js.map"
       ]
     },
     "custom": {
       "js": [
-        "/packs/js/custom-ccfe610dc14db674efd0.js"
+        "/packs/js/custom-f446e802444aa64b3e51.js"
       ],
       "js.map": [
-        "/packs/js/custom-ccfe610dc14db674efd0.js.map"
+        "/packs/js/custom-f446e802444aa64b3e51.js.map"
       ]
     }
   },
@@ -66,10 +66,5 @@
   "media/stylesheets/images/weather-icons/iconfinder_Morning_sun_sunrise_3763547.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Morning_sun_sunrise_3763547-981fb8c9119d42272159d6e40aac0e57.svg",
   "media/stylesheets/images/weather-icons/partly-cloudy-day.svg": "/packs/media/stylesheets/images/weather-icons/partly-cloudy-day-f548cedff5abcf49a45faca1ccccf077.svg",
   "media/stylesheets/images/weather-icons/partly-cloudy-night.svg": "/packs/media/stylesheets/images/weather-icons/partly-cloudy-night-cda0c351ef662edaf5cd3b06b9ef0d41.svg",
-  "media/stylesheets/images/weather-icons/rain.svg": "/packs/media/stylesheets/images/weather-icons/rain-891414e539bcbcba6cb643ce4d43f936.svg",
-  "media/webfonts/fa-solid-900.eot": "/packs/media/webfonts/fa-solid-900-e2675a61.eot",
-  "media/webfonts/fa-solid-900.svg": "/packs/media/webfonts/fa-solid-900-7726a281.svg",
-  "media/webfonts/fa-solid-900.ttf": "/packs/media/webfonts/fa-solid-900-f14c3b2f.ttf",
-  "media/webfonts/fa-solid-900.woff": "/packs/media/webfonts/fa-solid-900-0be94a07.woff",
-  "media/webfonts/fa-solid-900.woff2": "/packs/media/webfonts/fa-solid-900-64b3e814.woff2"
+  "media/stylesheets/images/weather-icons/rain.svg": "/packs/media/stylesheets/images/weather-icons/rain-891414e539bcbcba6cb643ce4d43f936.svg"
 }
