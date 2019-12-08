@@ -1,12 +1,18 @@
 source 'https://rubygems.org'
 ruby '2.6.5'
 
+gem 'rails', '~> 6.0'
 gem 'bootsnap', require: false
+
+# authentication
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
+
+# authorization
+gem "pundit"
+
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma', '~> 3.11'
-gem 'rails', '~> 6.0'
 gem 'redis', '~> 4.0'
 gem 'sass-rails', '~> 5.0'
 gem 'autoprefixer-rails'
@@ -16,8 +22,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
-gem 'simple_discussion'
-gem "geocoder"
 gem 'activerecord-postgis-adapter'
 gem "actionview-component"
 gem "rgeo-proj4"
@@ -27,18 +31,16 @@ gem "d3-rails"
 gem 'gon'
 gem 'rabl'
 gem 'oj'
-gem 'render_async'
 gem 'forecast_io'
 gem 'ruby-limiter'
 gem 'pry', '~> 0.12.2'
 gem 'friendly_id', '~> 5.2.4'
 gem 'acts_as_votable', '~> 0.12.0'
 gem "algoliasearch-rails"
-gem 'pluck_all'
 gem 'cloudinary'
 gem 'gravatar_image_tag'
 gem 'turbolinks', '~> 5.2.0'
-gem "pundit"
+
 gem 'activerecord-import'
 gem "roo", "~> 2.8.0"
 gem 'roo-xls'

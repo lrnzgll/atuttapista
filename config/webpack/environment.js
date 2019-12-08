@@ -1,6 +1,8 @@
 const { environment } = require('@rails/webpacker')
 
 const webpack = require('webpack')
+const merge = require("webpack-merge")
+const parts = require("./fast-css")
 
 
 // Preventing Babel from transpiling NodeModules packages
@@ -14,5 +16,9 @@ environment.plugins.prepend('Provide',
     Popper: ['popper.js', 'default']
   })
 )
+
+enviroment = merge([
+  parts.loadCSS(),
+]);
 
 module.exports = environment
