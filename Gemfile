@@ -15,7 +15,7 @@ gem 'loaf'
 
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 gem 'redis', '~> 4.0'
 gem 'sass-rails', '~> 5.0'
 gem 'autoprefixer-rails'
