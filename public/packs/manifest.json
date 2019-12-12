@@ -1,0 +1,113 @@
+{
+  "application.js": "/packs/js/application-96a68faa59855372827d.js",
+  "application.js.map": "/packs/js/application-96a68faa59855372827d.js.map",
+  "custom.js": "/packs/js/custom-f446e802444aa64b3e51.js",
+  "custom.js.map": "/packs/js/custom-f446e802444aa64b3e51.js.map",
+  "dashboard.js": "/packs/js/dashboard-82ef3eb73b72226c0510.js",
+  "dashboard.js.map": "/packs/js/dashboard-82ef3eb73b72226c0510.js.map",
+  "devise.js": "/packs/js/devise-4b5cc6f2362782b1c38d.js",
+  "devise.js.map": "/packs/js/devise-4b5cc6f2362782b1c38d.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-96a68faa59855372827d.js"
+      ],
+      "js.map": [
+        "/packs/js/application-96a68faa59855372827d.js.map"
+      ]
+    },
+    "custom": {
+      "js": [
+        "/packs/js/custom-f446e802444aa64b3e51.js"
+      ],
+      "js.map": [
+        "/packs/js/custom-f446e802444aa64b3e51.js.map"
+      ]
+    },
+    "dashboard": {
+      "js": [
+        "/packs/js/dashboard-82ef3eb73b72226c0510.js"
+      ],
+      "js.map": [
+        "/packs/js/dashboard-82ef3eb73b72226c0510.js.map"
+      ]
+    },
+    "devise": {
+      "js": [
+        "/packs/js/devise-4b5cc6f2362782b1c38d.js"
+      ],
+      "js.map": [
+        "/packs/js/devise-4b5cc6f2362782b1c38d.js.map"
+      ]
+    }
+  },
+  "media/stylesheets/config/Rubik-Regular.ttf": "/packs/media/stylesheets/config/Rubik-Regular-b3d0902b533ff4c4f1698a2f96ddabab.ttf",
+  "media/stylesheets/devise-images/login.jpg": "/packs/media/stylesheets/devise-images/login-f2d3d46897a006c0bda410a3ca0852ef.jpg",
+  "media/stylesheets/images/banner/background-1.jpg": "/packs/media/stylesheets/images/banner/background-1-f03c99d39bf420a3f2a6336e59b12edb.jpg",
+  "media/stylesheets/images/banner/background-2.jpg": "/packs/media/stylesheets/images/banner/background-2-b21be27d44e244b7cd2d46e4ce162617.jpg",
+  "media/stylesheets/images/dashboard/weather-icons/clear-day.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/clear-day-0be9595c05c878c7a8693c673639d491.svg",
+  "media/stylesheets/images/dashboard/weather-icons/clear-night.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/clear-night-683fe0eb1229339828f8a96ef3affb42.svg",
+  "media/stylesheets/images/dashboard/weather-icons/cloudy.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/cloudy-10b89b7649fd78bfccea34b8d66cd43c.svg",
+  "media/stylesheets/images/dashboard/weather-icons/fog.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/fog-fdb019c417ad9ae0f0a3f6cce9a8be0a.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_0ABolt_cloud_forecast_lightning_moon_night_storm_weather_1_3763546.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_0ABolt_cloud_forecast_lightning_moon_night_storm_weather_1_3763546-3630fa7466d14d671d3aac9790b7d871.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_0ABolt_cloud_forecast_lightning_moon_night_storm_weather_3763545.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_0ABolt_cloud_forecast_lightning_moon_night_storm_weather_3763545-0aa70fb9ceec61eff068d8abb4618b71.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Christmas_cold_forecast_snow_snowflake_weather_winter_xmas_3763549.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Christmas_cold_forecast_snow_snowflake_weather_winter_xmas_3763549-e64e2e57d03b2ebfa50af693425fba82.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_1_3763540.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_1_3763540-6dda316ae849e8bf404c9e5d6dac93df.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_2_3763539.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_2_3763539-4a94eb4758451d181cac86627401cc12.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_3763538.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_3763538-0fde35d30e735c6236c4be5ddf78b303.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_day_forecast_shine_sun_weather_3763537.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_day_forecast_shine_sun_weather_3763537-414c2fdf94780e5b4036a437ffef320c.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_forecast_moon_night_rain_weather_3763544.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_forecast_moon_night_rain_weather_3763544-cbd849391b39f1e3bb891ee64cfe818e.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_1_3763535.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_1_3763535-75c8161b8066414983e465afbed052f9.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_2_3763542.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_2_3763542-73f3b68fb70196c00824bb7803684e45.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_3763534.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_3763534-34fc38f79857dc25c6980c95a5d3e927.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Colorful_fairytale_fantasy_magic_magician_rainbow_3763548.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Colorful_fairytale_fantasy_magic_magician_rainbow_3763548-d7af8e44cbeafc3ebac6a3696921a7d3.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Forecast_sun_sunset_weather_3763550.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Forecast_sun_sunset_weather_3763550-03d7f91e005f4fe27810b01c7886a535.svg",
+  "media/stylesheets/images/dashboard/weather-icons/iconfinder_Morning_sun_sunrise_3763547.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/iconfinder_Morning_sun_sunrise_3763547-981fb8c9119d42272159d6e40aac0e57.svg",
+  "media/stylesheets/images/dashboard/weather-icons/partly-cloudy-day.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/partly-cloudy-day-f548cedff5abcf49a45faca1ccccf077.svg",
+  "media/stylesheets/images/dashboard/weather-icons/partly-cloudy-night.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/partly-cloudy-night-cda0c351ef662edaf5cd3b06b9ef0d41.svg",
+  "media/stylesheets/images/dashboard/weather-icons/rain.svg": "/packs/media/stylesheets/images/dashboard/weather-icons/rain-891414e539bcbcba6cb643ce4d43f936.svg",
+  "media/stylesheets/images/devise/login.jpg": "/packs/media/stylesheets/images/devise/login-f2d3d46897a006c0bda410a3ca0852ef.jpg",
+  "media/stylesheets/images/kinds/ciclabile.svg": "/packs/media/stylesheets/images/kinds/ciclabile-8855a8382c4fc166db8cd569f785a0ce.svg",
+  "media/stylesheets/images/logo/logo.png": "/packs/media/stylesheets/images/logo/logo-58905a4e2505ce1cf683d0546c8ff5dd.png",
+  "media/stylesheets/images/regions/abruzzo.jpg": "/packs/media/stylesheets/images/regions/abruzzo-51f7ff7a72cc0b1f545c6cddc422f686.jpg",
+  "media/stylesheets/images/regions/basilicata.jpg": "/packs/media/stylesheets/images/regions/basilicata-4eaf88e2efb9b460612d4ea81fa58695.jpg",
+  "media/stylesheets/images/regions/calabria.jpg": "/packs/media/stylesheets/images/regions/calabria-8fef57ff9a9368c19b92af79f709d9fd.jpg",
+  "media/stylesheets/images/regions/campania.jpg": "/packs/media/stylesheets/images/regions/campania-02aea557cab9499569a943b86ffa7c81.jpg",
+  "media/stylesheets/images/regions/emilia-romagna.jpg": "/packs/media/stylesheets/images/regions/emilia-romagna-10850957d66dcbefc52842892605071c.jpg",
+  "media/stylesheets/images/regions/friuliveneziagiulia.jpg": "/packs/media/stylesheets/images/regions/friuliveneziagiulia-156f9ea85db9117dab52c8cce1761780.jpg",
+  "media/stylesheets/images/regions/lazio.jpg": "/packs/media/stylesheets/images/regions/lazio-e03de2b662f2a7598de885883fac7ec5.jpg",
+  "media/stylesheets/images/regions/liguria.jpg": "/packs/media/stylesheets/images/regions/liguria-647c85c8c059f1c6818a679da7ff4430.jpg",
+  "media/stylesheets/images/regions/lombardia.jpg": "/packs/media/stylesheets/images/regions/lombardia-f133437f6fe71b54459c203a3a0d4e8d.jpg",
+  "media/stylesheets/images/regions/marche.jpg": "/packs/media/stylesheets/images/regions/marche-99c165e23ba974cf2ad4a5ea92cba60b.jpg",
+  "media/stylesheets/images/regions/molise.jpg": "/packs/media/stylesheets/images/regions/molise-b6ccfa4630d65388134155a97b676641.jpg",
+  "media/stylesheets/images/regions/piemonte.jpg": "/packs/media/stylesheets/images/regions/piemonte-94e1290b3e36c041fa1f779e394b2d07.jpg",
+  "media/stylesheets/images/regions/puglia.jpg": "/packs/media/stylesheets/images/regions/puglia-ac95692c57a3a17c686b7c622d1c6414.jpg",
+  "media/stylesheets/images/regions/sardegna.jpg": "/packs/media/stylesheets/images/regions/sardegna-531b6a7e4b8c63f9696be6cd70f5bf69.jpg",
+  "media/stylesheets/images/regions/sicilia.jpg": "/packs/media/stylesheets/images/regions/sicilia-fcf941c0f477bceb2ab5dcaa1f5d316d.jpg",
+  "media/stylesheets/images/regions/toscana.jpg": "/packs/media/stylesheets/images/regions/toscana-4da03580c1e7d6476b595b368aead537.jpg",
+  "media/stylesheets/images/regions/trentinoaltoadige.jpg": "/packs/media/stylesheets/images/regions/trentinoaltoadige-53b3768e0c8cb35524350fd190350c41.jpg",
+  "media/stylesheets/images/regions/umbria.jpg": "/packs/media/stylesheets/images/regions/umbria-634e239d83427b8e315149a3966205b6.jpg",
+  "media/stylesheets/images/regions/valledaosta.jpg": "/packs/media/stylesheets/images/regions/valledaosta-3486423eb5f2f46a177a8029151712ae.jpg",
+  "media/stylesheets/images/regions/veneto.jpg": "/packs/media/stylesheets/images/regions/veneto-2fa56ef918d9f35dbc6021afeea2eb9b.jpg",
+  "media/stylesheets/images/weather-icons/clear-day.svg": "/packs/media/stylesheets/images/weather-icons/clear-day-0be9595c05c878c7a8693c673639d491.svg",
+  "media/stylesheets/images/weather-icons/clear-night.svg": "/packs/media/stylesheets/images/weather-icons/clear-night-683fe0eb1229339828f8a96ef3affb42.svg",
+  "media/stylesheets/images/weather-icons/cloudy.svg": "/packs/media/stylesheets/images/weather-icons/cloudy-10b89b7649fd78bfccea34b8d66cd43c.svg",
+  "media/stylesheets/images/weather-icons/fog.svg": "/packs/media/stylesheets/images/weather-icons/fog-fdb019c417ad9ae0f0a3f6cce9a8be0a.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_0ABolt_cloud_forecast_lightning_moon_night_storm_weather_1_3763546.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_0ABolt_cloud_forecast_lightning_moon_night_storm_weather_1_3763546-3630fa7466d14d671d3aac9790b7d871.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_0ABolt_cloud_forecast_lightning_moon_night_storm_weather_3763545.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_0ABolt_cloud_forecast_lightning_moon_night_storm_weather_3763545-0aa70fb9ceec61eff068d8abb4618b71.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Christmas_cold_forecast_snow_snowflake_weather_winter_xmas_3763549.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Christmas_cold_forecast_snow_snowflake_weather_winter_xmas_3763549-e64e2e57d03b2ebfa50af693425fba82.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_1_3763540.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_1_3763540-6dda316ae849e8bf404c9e5d6dac93df.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_2_3763539.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_2_3763539-4a94eb4758451d181cac86627401cc12.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_3763538.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Cloud_day_forecast_rain_shine_sun_weather_3763538-0fde35d30e735c6236c4be5ddf78b303.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Cloud_day_forecast_shine_sun_weather_3763537.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Cloud_day_forecast_shine_sun_weather_3763537-414c2fdf94780e5b4036a437ffef320c.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Cloud_forecast_moon_night_rain_weather_3763544.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Cloud_forecast_moon_night_rain_weather_3763544-cbd849391b39f1e3bb891ee64cfe818e.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_1_3763535.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_1_3763535-75c8161b8066414983e465afbed052f9.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_2_3763542.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_2_3763542-73f3b68fb70196c00824bb7803684e45.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_3763534.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Cloud_lightening_storm_thunder_weather_3763534-34fc38f79857dc25c6980c95a5d3e927.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Colorful_fairytale_fantasy_magic_magician_rainbow_3763548.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Colorful_fairytale_fantasy_magic_magician_rainbow_3763548-d7af8e44cbeafc3ebac6a3696921a7d3.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Forecast_sun_sunset_weather_3763550.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Forecast_sun_sunset_weather_3763550-03d7f91e005f4fe27810b01c7886a535.svg",
+  "media/stylesheets/images/weather-icons/iconfinder_Morning_sun_sunrise_3763547.svg": "/packs/media/stylesheets/images/weather-icons/iconfinder_Morning_sun_sunrise_3763547-981fb8c9119d42272159d6e40aac0e57.svg",
+  "media/stylesheets/images/weather-icons/partly-cloudy-day.svg": "/packs/media/stylesheets/images/weather-icons/partly-cloudy-day-f548cedff5abcf49a45faca1ccccf077.svg",
+  "media/stylesheets/images/weather-icons/partly-cloudy-night.svg": "/packs/media/stylesheets/images/weather-icons/partly-cloudy-night-cda0c351ef662edaf5cd3b06b9ef0d41.svg",
+  "media/stylesheets/images/weather-icons/rain.svg": "/packs/media/stylesheets/images/weather-icons/rain-891414e539bcbcba6cb643ce4d43f936.svg"
+}
