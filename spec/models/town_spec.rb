@@ -2,7 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Town, type: :model do
   let(:provinciavarese) { build_stubbed(:county) }
-  subject { described_class.new(name: 'Varese', county: provinciavarese, latitude: 45, longitude: 0) }
+  let(:lombardia) { build_stubbed(:region) }
+  let(:lonlat) { RGeo::Cartesian.factory(srid: 4326).point(5, 45) }
+  subject { described_class.new(name: 'Varese', county: provinciavarese, region: lombardia,lonlat: lonlat ) }
 
   it "is valid with valid attributes" do
     expect(subject).to be_valid    

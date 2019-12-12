@@ -54,7 +54,7 @@ class UpdateDatabase
       t = JSON.parse(File.read(e))
       next if regions.any?{|c| c.name == t['regione']['nome'] }
 
-      regions << country.regions.new(name: t['regione']['nome'], slug: t['regione']['nome'].parameterize(separator: ''))
+      regions << country.regions.new(name: t['regione']['nome'], slug: t['regione']['nome'].parameterize)
     end
     Region.import regions
     p 'regions created'
@@ -69,7 +69,7 @@ class UpdateDatabase
 
       region = Region.find_by(name: t['regione']['nome'])
       p region.name
-      counties << region.counties.new(name: t['provincia']['nome'], slug: t['sigla'])
+      counties << region.counties.new(name: t['provincia']['nome'], slug: t['sigla'].parameterize)
     end
     County.import counties, validate: true
     p 'counties created'

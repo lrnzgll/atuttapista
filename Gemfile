@@ -10,6 +10,9 @@ gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 # authorization
 gem "pundit"
 
+# breadcrumb
+gem 'loaf'
+
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma', '~> 3.11'
@@ -60,6 +63,7 @@ group :development do
 end
 
 group :development, :test do
+  gem 'httplog'
   gem 'pry-rails'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -76,6 +80,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
   gem 'shoulda-matchers'
+  gem 'webmock'
   gem 'rails-controller-testing'
   gem 'simplecov', require: false
 end

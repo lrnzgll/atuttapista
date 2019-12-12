@@ -1,7 +1,7 @@
 class Route < ApplicationRecord
   include AlgoliaSearch
 
-  algoliasearch do
+  algoliasearch per_environment: true, disable_indexing: Rails.env.test? do
     attributes :name, :description
   end
 

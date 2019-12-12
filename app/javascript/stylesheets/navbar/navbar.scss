@@ -1,4 +1,11 @@
 /* Main navbar */
+$blue-gray 			    : #34495e;
+$blue-gray-darken 	: #2c3e50;
+$blue 				      : #3498db;
+$blue-darken 		    : #2980b9;
+$green 				      : #1abc9c;
+$green-darken 		  : #16a085;
+
 .navbar-wagon {
     box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
     background: $background-normal;
@@ -67,4 +74,106 @@
     transform: rotate(45deg);
     border-left: 1px solid #E6E6E6;
     border-top: 1px solid #E6E6E6;
+  }
+  .breadcrumb-item {
+    + .breadcrumb-item {
+      &::before {
+        content: '';
+        display: block;
+      }
+    }
+  }
+  .breadcrumb {    
+    background-color: white;
+    border-radius: 0px;
+    li{
+      float:left;
+      a{
+        color:#FFF;
+        display:block;
+        background: $blue;
+        text-decoration: none;
+        position:relative;
+        height: 40px;
+        line-height:40px;
+        padding: 0 10px 0 5px;
+        text-align: center;
+        margin-right: 23px;
+      }
+      &:nth-child(even){
+        a{
+          background-color: $blue-darken;
+          
+          &:before{
+            border-color:$blue-darken;
+            border-left-color:transparent;
+           }
+          &:after{
+            border-left-color:$blue-darken;
+          }
+        }
+      }
+      &:first-child{
+        a{
+          padding-left:15px;
+          @include border-radius(4px 0 0 4px);
+          &:before{
+            border:none;
+           }
+        }
+      }
+      &:last-child{
+        a{
+          padding-right:15px;
+          @include border-radius(0 4px 4px 0);
+          &:after{
+            border:none;
+           }
+        }
+      }
+      
+      a{   
+        &:before,
+        &:after{
+          content: "";
+          position:absolute;
+          top: 0;
+          border:0 solid $blue;
+          border-width:20px 10px;
+          width: 0;
+          height: 0;
+        }
+        &:before{
+          left:-20px;
+          border-left-color:transparent;
+        }
+        &:after{
+          left:100%;
+          border-color:transparent;
+          border-left-color:$blue;
+        }
+        &:hover{
+          background-color: $green;
+          
+          &:before{
+            border-color:$green;
+            border-left-color:transparent;
+           }
+          &:after{
+            border-left-color:$green;
+          }
+        }
+        &:active{
+          background-color: $green-darken;
+          
+          &:before{
+            border-color:$green-darken;
+            border-left-color:transparent;
+           }
+          &:after{
+            border-left-color:$green-darken;
+          }
+        }
+      }
+    }
   }

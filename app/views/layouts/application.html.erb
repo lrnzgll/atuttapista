@@ -10,8 +10,8 @@
   </head>
   <body>
     <%= render "shared/navbar"%>
+    <%= render partial: 'shared/breadcrumb' %>
     <%= yield %>
-    <%= content_for :render_async %>
   </body>
   <%= javascript_pack_tag 'custom', defer:"defer" %>
 </html>

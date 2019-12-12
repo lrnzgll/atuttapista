@@ -10,7 +10,7 @@
     <% if user_signed_in? %>
 
       <!-- Links when logged in -->
-      <%= link_to "Dashboard", user_dashboard_path(current_user), class: "navbar-wagon-item btn btn-sm btn--stripe" %>
+      <%= link_to "Dashboard", dashboard_path(current_user), class: "navbar-wagon-item btn btn-sm btn--stripe" %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">

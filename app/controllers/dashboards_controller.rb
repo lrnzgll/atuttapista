@@ -3,6 +3,7 @@
 class DashboardsController < ApplicationController
   before_action :set_user, only: [:home]
   before_action :set_request, :set_ip
+  breadcrumb 'Dashboard', [:dashboard, @user]
 
   def home
     authorize @user, policy_class: DashboardPolicy
@@ -12,7 +13,7 @@ class DashboardsController < ApplicationController
   private
 
   def set_user
-    @user = User.find(params[:id]) 
+    @user = current_user
   end
 
   def set_request

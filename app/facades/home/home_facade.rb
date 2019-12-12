@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Home::HomeFacade
-  def initialize   
+  def initialize
   end
 
   def selected_regions
