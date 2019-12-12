@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   end
   get '/contact', to: 'homes#contact'
   get '/search', to: 'homes#search', as: 'search_page'
-  get '/:id/dashboard', to: 'dashboards#home', as: :user_dashboard
+  get '/:id/dashboard', to: 'dashboards#home', as: :dashboard
 end

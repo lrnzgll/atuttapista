@@ -15,8 +15,8 @@ class User < ApplicationRecord
   end
 
   def user_coordinates
-    if self.address
-      return { lng: self.address.lonlat.lon, lat: self.address.lonlat.lat } 
-    end
+    return unless self.address
+
+    { lng: self.address.lonlat.lon, lat: self.address.lonlat.lat } 
   end
 end

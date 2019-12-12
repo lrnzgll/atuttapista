@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :region_route do
-    region { nil }
-    route { nil }
+    region
+    route
   end
 end

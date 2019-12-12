@@ -24,6 +24,6 @@ RSpec.describe User, type: :model do
 
   describe "#destroy" do
     it { expect(subject).to have_many(:routes).dependent(:destroy) }
-    it { expect(subject).to have_many(:addresses).dependent(:destroy) }
+    it { expect(subject).to have_one(:address).dependent(:destroy) }
   end
 end

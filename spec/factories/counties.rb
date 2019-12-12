@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :county do
-    name { "MyString" }
+    name { (0...8).map { (65 + rand(26)).chr }.join }
     slug { "MyString" }
-    region { nil }
+    region
   end
 end
