@@ -1,43 +1,51 @@
 {
-  "application.js": "/packs/js/application-6574f9ecd35209dc33ac.js",
-  "application.js.map": "/packs/js/application-6574f9ecd35209dc33ac.js.map",
-  "custom.js": "/packs/js/custom-d9f7f5d15f2fff2aaa68.js",
-  "custom.js.map": "/packs/js/custom-d9f7f5d15f2fff2aaa68.js.map",
-  "dashboard.js": "/packs/js/dashboard-4727e78842d2036e72c4.js",
-  "dashboard.js.map": "/packs/js/dashboard-4727e78842d2036e72c4.js.map",
-  "devise.js": "/packs/js/devise-ed5e6af87cd26af40ccc.js",
-  "devise.js.map": "/packs/js/devise-ed5e6af87cd26af40ccc.js.map",
+  "application.css": "/packs/css/application-3aeaa34c.css",
+  "application.js": "/packs/js/application-1a361e3141d7ccd0c639.js",
+  "application.js.map": "/packs/js/application-1a361e3141d7ccd0c639.js.map",
+  "custom.js": "/packs/js/custom-980924e5fb90931dc7ec.js",
+  "custom.js.map": "/packs/js/custom-980924e5fb90931dc7ec.js.map",
+  "dashboard.css": "/packs/css/dashboard-7efaf445.css",
+  "dashboard.js": "/packs/js/dashboard-fbcc803c0e28b7c9b51c.js",
+  "dashboard.js.map": "/packs/js/dashboard-fbcc803c0e28b7c9b51c.js.map",
+  "devise.js": "/packs/js/devise-1e5edac52ff3de56d15c.js",
+  "devise.js.map": "/packs/js/devise-1e5edac52ff3de56d15c.js.map",
   "entrypoints": {
     "application": {
+      "css": [
+        "/packs/css/application-3aeaa34c.css"
+      ],
       "js": [
-        "/packs/js/application-6574f9ecd35209dc33ac.js"
+        "/packs/js/application-1a361e3141d7ccd0c639.js"
       ],
       "js.map": [
-        "/packs/js/application-6574f9ecd35209dc33ac.js.map"
+        "/packs/js/application-1a361e3141d7ccd0c639.js.map"
       ]
     },
     "custom": {
       "js": [
-        "/packs/js/custom-d9f7f5d15f2fff2aaa68.js"
+        "/packs/js/custom-980924e5fb90931dc7ec.js"
       ],
       "js.map": [
-        "/packs/js/custom-d9f7f5d15f2fff2aaa68.js.map"
+        "/packs/js/custom-980924e5fb90931dc7ec.js.map"
       ]
     },
     "dashboard": {
+      "css": [
+        "/packs/css/dashboard-7efaf445.css"
+      ],
       "js": [
-        "/packs/js/dashboard-4727e78842d2036e72c4.js"
+        "/packs/js/dashboard-fbcc803c0e28b7c9b51c.js"
       ],
       "js.map": [
-        "/packs/js/dashboard-4727e78842d2036e72c4.js.map"
+        "/packs/js/dashboard-fbcc803c0e28b7c9b51c.js.map"
       ]
     },
     "devise": {
       "js": [
-        "/packs/js/devise-ed5e6af87cd26af40ccc.js"
+        "/packs/js/devise-1e5edac52ff3de56d15c.js"
       ],
       "js.map": [
-        "/packs/js/devise-ed5e6af87cd26af40ccc.js.map"
+        "/packs/js/devise-1e5edac52ff3de56d15c.js.map"
       ]
     }
   },
