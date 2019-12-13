@@ -104,7 +104,6 @@ class UpdateDatabase
 
   def lats(ll)
     return nil if ll.empty?
-
     lat_lon = "#{ll[3].to_i}° #{ll[4].to_i}' #{ll[5].to_i}'' #{ll[6].to_i}° #{ll[7].to_i}' #{ll[8].to_i}''".scan(/(\d+)° (\d+)' (\d+)''/).map do |d,m,s|
       d.to_f + m.to_f/60 + s.to_f/3600
     end
