@@ -1,51 +1,59 @@
 {
-  "application.css": "/packs/css/application-3aeaa34c.css",
-  "application.js": "/packs/js/application-1a361e3141d7ccd0c639.js",
-  "application.js.map": "/packs/js/application-1a361e3141d7ccd0c639.js.map",
-  "custom.js": "/packs/js/custom-980924e5fb90931dc7ec.js",
-  "custom.js.map": "/packs/js/custom-980924e5fb90931dc7ec.js.map",
-  "dashboard.css": "/packs/css/dashboard-7efaf445.css",
-  "dashboard.js": "/packs/js/dashboard-fbcc803c0e28b7c9b51c.js",
-  "dashboard.js.map": "/packs/js/dashboard-fbcc803c0e28b7c9b51c.js.map",
-  "devise.js": "/packs/js/devise-1e5edac52ff3de56d15c.js",
-  "devise.js.map": "/packs/js/devise-1e5edac52ff3de56d15c.js.map",
+  "application.css": "/packs/css/application-f3111a15.css",
+  "application.css.map": "/packs/css/application-f3111a15.css.map",
+  "application.js": "/packs/js/application-b4031fb8a4f5fd14aebb.js",
+  "application.js.map": "/packs/js/application-b4031fb8a4f5fd14aebb.js.map",
+  "custom.js": "/packs/js/custom-f446e802444aa64b3e51.js",
+  "custom.js.map": "/packs/js/custom-f446e802444aa64b3e51.js.map",
+  "dashboard.css": "/packs/css/dashboard-b90c038f.css",
+  "dashboard.css.map": "/packs/css/dashboard-b90c038f.css.map",
+  "dashboard.js": "/packs/js/dashboard-6961f8cd3bc40a677395.js",
+  "dashboard.js.map": "/packs/js/dashboard-6961f8cd3bc40a677395.js.map",
+  "devise.js": "/packs/js/devise-4b5cc6f2362782b1c38d.js",
+  "devise.js.map": "/packs/js/devise-4b5cc6f2362782b1c38d.js.map",
   "entrypoints": {
     "application": {
       "css": [
-        "/packs/css/application-3aeaa34c.css"
+        "/packs/css/application-f3111a15.css"
       ],
       "js": [
-        "/packs/js/application-1a361e3141d7ccd0c639.js"
+        "/packs/js/application-b4031fb8a4f5fd14aebb.js"
+      ],
+      "css.map": [
+        "/packs/css/application-f3111a15.css.map"
       ],
       "js.map": [
-        "/packs/js/application-1a361e3141d7ccd0c639.js.map"
+        "/packs/js/application-b4031fb8a4f5fd14aebb.js.map"
       ]
     },
     "custom": {
       "js": [
-        "/packs/js/custom-980924e5fb90931dc7ec.js"
+        "/packs/js/custom-f446e802444aa64b3e51.js"
       ],
       "js.map": [
-        "/packs/js/custom-980924e5fb90931dc7ec.js.map"
+        "/packs/js/custom-f446e802444aa64b3e51.js.map"
       ]
     },
     "dashboard": {
       "css": [
-        "/packs/css/dashboard-7efaf445.css"
+        "/packs/css/dashboard-b90c038f.css"
       ],
       "js": [
-        "/packs/js/dashboard-fbcc803c0e28b7c9b51c.js"
+        "/packs/js/dashboard-6961f8cd3bc40a677395.js"
+      ],
+      "css.map": [
+        "/packs/css/dashboard-b90c038f.css.map"
       ],
       "js.map": [
-        "/packs/js/dashboard-fbcc803c0e28b7c9b51c.js.map"
+        "/packs/js/dashboard-6961f8cd3bc40a677395.js.map"
       ]
     },
     "devise": {
       "js": [
-        "/packs/js/devise-1e5edac52ff3de56d15c.js"
+        "/packs/js/devise-4b5cc6f2362782b1c38d.js"
       ],
       "js.map": [
-        "/packs/js/devise-1e5edac52ff3de56d15c.js.map"
+        "/packs/js/devise-4b5cc6f2362782b1c38d.js.map"
       ]
     }
   },
