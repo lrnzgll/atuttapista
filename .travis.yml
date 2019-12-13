@@ -1,4 +1,5 @@
 language: ruby
+dist: trusty
 cache:
   bundler: true
   yarn: true
@@ -7,9 +8,12 @@ services:
 sudo: required
 before_install:
 - sudo apt-get update
-- sudo apt-get install google-chrome-stable
+- gem install bundler:2.0.2
+- bundle update --bundler
 - bundle install --jobs=3 --retry=3
+- google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 addons:
+  chrome: stable
   postgresql: '9.6'
   apt:
     packages:
@@ -20,7 +24,5 @@ before_script:
   - psql -c 'CREATE EXTENSION postgis;' -U postgres -d newgps_test
 
 script:
-  - bundle exec rake db:schema:load
   - bundle exec rake db:test:prepare
-  - SECRET_KEY_BASE=a RAILS_ENV=production bundle exec rake assets:precompile
   - bundle exec rspec

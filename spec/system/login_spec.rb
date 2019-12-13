@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 describe "the signin process",  type: :system do
+  before(:each) do
+    Capybara.current_driver = :selenium_chrome_headless
+  end
   let!(:user) { create(:user) }
   context 'an existing user is able to login' do
     it 'tries something' do

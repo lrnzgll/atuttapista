@@ -7,6 +7,8 @@ require 'rspec/rails'
 
 
 
+
+
 # Prevent database truncation if the environment is production
 
 # Add additional requires below this line. Rails is not loaded until this point!
@@ -71,3 +73,4 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+Capybara.default_driver = :selenium_chrome_headless

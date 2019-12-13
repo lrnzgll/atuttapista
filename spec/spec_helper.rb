@@ -16,6 +16,7 @@ WebMock.disable_net_connect!(allow_localhost: true)
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
 RSpec.configure do |config|
   config.before(:each) do
     stub_request(:get, %r{\Ahttp://ip-api.com/json/\d+}).

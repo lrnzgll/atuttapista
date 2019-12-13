@@ -78,7 +78,6 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.8'
-  gem 'selenium-webdriver'
   gem 'chromedriver-helper'
   gem 'shoulda-matchers'
   gem 'webmock'
