@@ -434,7 +434,7 @@ DEPENDENCIES
   bullet
   capistrano (~> 3.10.0)
   capistrano-secrets-yml (~> 1.1.0)
-  capybara (>= 2.15)
+  capybara
   chromedriver-helper
   cloudinary
   d3-rails
