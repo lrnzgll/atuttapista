@@ -6,6 +6,7 @@ class RoutesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:show]
 
   def show
+    breadcrumb @route.name, [@route]
     @content = Route::RouteFacade.new(@route)
     authorize @content, policy_class: RoutePolicy
   end
