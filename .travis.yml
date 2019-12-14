@@ -1,5 +1,4 @@
 language: ruby
-dist: trusty
 cache:
   bundler: true
   yarn: true
@@ -7,9 +6,7 @@ services:
   - redis-server
 sudo: required
 before_install:
-- sudo apt-get update
 - gem install bundler:2.0.2
-- bundle update --bundler
 - bundle install --jobs=3 --retry=3
 - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 addons:
@@ -23,6 +20,6 @@ before_script:
   - psql -U postgres -c "create database newgps_test"
   - psql -c 'CREATE EXTENSION postgis;' -U postgres -d newgps_test
 
-script:
+script: 
   - bundle exec rake db:test:prepare
   - bundle exec rspec
