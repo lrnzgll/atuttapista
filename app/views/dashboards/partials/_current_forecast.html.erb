@@ -1,5 +1,5 @@
 <div class='col-xs-4'style="margin: 10px auto;">
-  <%= inline_svg_pack_tag("media/stylesheets/images/weather-icons/#{forecast.icon}.svg", class: 'weather-icon')%>
+  <%= inline_svg_tag("weather-icons/#{forecast.icon}.svg", class: 'weather-icon')%>
   <div class='weather-data m-2 ta-c'>
     <p>Temperatura: <%= forecast.temperature %>°</p>
     <p>Temperatura apparente: <%= forecast.apparent_temperature %>°</p>
@@ -12,7 +12,7 @@
   <div class='weather-grid'>
     <% forecast.week_weather.each do |day|%>
       <div>
-        <%= inline_svg_pack_tag("media/stylesheets/images/weather-icons/#{day.icon}.svg", class: 'weather-small-icon')%>
+        <%= inline_svg_tag("weather-icons/#{day.icon}.svg", class: 'weather-small-icon')%>
         <div class='weather-data m-2 ta-c'>
           <p class='fz-sm'><%= Time.at(day.time).strftime('%e %b %Y') %></p>
           <p class='fz-sm'>Temperatura: <%= day.temperatureLow %>° - <%= day.temperatureHigh %>°</p>

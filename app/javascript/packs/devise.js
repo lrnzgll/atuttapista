@@ -1,1 +1,0 @@
-require.context('../stylesheets/devise-images', true, /\.(?:png|jpg|gif|ico|svg)$/)
