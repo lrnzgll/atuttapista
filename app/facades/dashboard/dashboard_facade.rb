@@ -11,10 +11,10 @@ class Dashboard::DashboardFacade
   end
 
   def region_routes_count
-    #@region_routes_count ||= user_address.region.routes.count
+    # @region_routes_count ||= user_address.region.routes.count
   end
 
   def user_coordinates
     @user_coordinates ||= (user.user_coordinates || Geocoder.user_coordinates(@ip))
   end
-end 
+end

@@ -11,11 +11,11 @@ RSpec.describe PlaceOfInterest, type: :model do
     tigros.name = nil
     expect(tigros).to_not be_valid
   end
-  
+
   it "is not valid without a description" do
     tigros.description = nil
     expect(tigros).to_not be_valid
-  end 
+  end
 
   describe "#destroy" do
     it { expect(subject).to have_many(:addresses).dependent(:destroy) }

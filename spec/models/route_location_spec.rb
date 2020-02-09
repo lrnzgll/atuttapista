@@ -11,11 +11,11 @@ RSpec.describe RouteLocation, type: :model do
     schiranna.name = nil
     expect(schiranna).to_not be_valid
   end
-  
+
   it "is not valid without a description" do
     schiranna.description = nil
     expect(schiranna).to_not be_valid
-  end 
+  end
 
   describe "#destroy" do
     it { expect(subject).to have_many(:addresses).dependent(:destroy) }

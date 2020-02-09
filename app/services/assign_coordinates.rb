@@ -1,7 +1,6 @@
 require 'csv'
 
 class AssignCoordinates
-
   def initialize(name = nil, country = nil, region = nil)
     @name = name
     @country = country
@@ -10,7 +9,7 @@ class AssignCoordinates
   end
 
   def start
-    CSV.open( @file, 'wb' ) do |writer|
+    CSV.open(@file, 'wb') do |writer|
       Town.where('id > ?', 7478).includes(:county).order(:id).find_each do |town|
         sleep 0.1
         results = Geocoder.search("#{town.name}, provincia di #{town.county.name}, Italy")

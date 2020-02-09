@@ -4,19 +4,19 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :trackable
-  
+
   has_many :routes, dependent: :destroy
   has_one :address, as: :addressable, dependent: :destroy
 
-  validates :username, presence:true
+  validates :username, presence: true
 
   def name
-    self.username
+    username
   end
 
   def user_coordinates
-    return unless self.address
+    return unless address
 
-    { lng: self.address.lonlat.lon, lat: self.address.lonlat.lat } 
+    { lng: address.lonlat.lon, lat: address.lonlat.lat }
   end
 end

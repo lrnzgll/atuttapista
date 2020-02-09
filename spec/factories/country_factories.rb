@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :country do
     name { "Italia" }
-    slug  { "IT" }
+    slug { "IT" }
   end
 end

@@ -5,7 +5,6 @@ class Country < ApplicationRecord
   validates :name, presence: true
 
   def u_regions_names
-    self.regions.map{|x| x.name.upcase}
+    regions.map { |x| x.name.upcase }
   end
-
 end

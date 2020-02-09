@@ -5,7 +5,7 @@ class Home::HomeFacade
   end
 
   def selected_regions
-    @selected_regions ||= Region.left_joins(:routes).group(:id).order(Arel.sql'COUNT(routes.id) DESC').limit(4)
+    @selected_regions ||= Region.left_joins(:routes).group(:id).order(Arel.sql('COUNT(routes.id) DESC')).limit(4)
   end
 
   def featured_routes

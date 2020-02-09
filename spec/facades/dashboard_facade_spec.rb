@@ -22,16 +22,16 @@ RSpec.describe Dashboard::DashboardFacade do
     end
   end
   describe '#user_coordinates' do
-    subject { Dashboard::DashboardFacade.new(user,ip) }
+    subject { Dashboard::DashboardFacade.new(user, ip) }
     context 'when the user has not address' do
       it 'returns an hash with data from Geocoder' do
-        expect(subject.user_coordinates).to eq( {lng: 8, lat: 50} )
+        expect(subject.user_coordinates).to eq(lng: 8, lat: 50)
       end
     end
     context 'when the user has an address' do
       let!(:address) { create(:address, addressable: user) }
       it 'returns an hash with data from the address' do
-       expect(subject.user_coordinates).to eq( {lng: 5, lat: 45} ) 
+        expect(subject.user_coordinates).to eq(lng: 5, lat: 45)
       end
     end
   end
