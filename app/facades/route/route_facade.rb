@@ -4,5 +4,5 @@ class Route::RouteFacade
   attr_reader :route
   def initialize(route)
     @route = route
-  end  
+  end
 end

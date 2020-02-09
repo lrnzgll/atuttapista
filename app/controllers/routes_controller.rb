@@ -6,7 +6,6 @@ class RoutesController < ApplicationController
   before_action :adjust_visit_counter, only: [:show]
   skip_before_action :authenticate_user!, only: [:show]
 
-
   def show
     breadcrumb @first_region.name, region_path(@first_region.id)
     breadcrumb @route.name, [@route]

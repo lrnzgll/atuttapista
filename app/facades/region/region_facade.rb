@@ -14,8 +14,6 @@ class Region::RegionFacade
     @favourites_routes ||= @region.routes.includes(:kinds, :surfaces).order(cached_votes_total: :desc).load
   end
 
-  
-
   # def new_routes
   #   @new_routes ||= @region.routes.order(created_at: :desc).limit(10).includes(:user).load
   # end

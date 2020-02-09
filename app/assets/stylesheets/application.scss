@@ -1,7 +1,7 @@
 @import 'bootstrap';
+@import './config/index.scss';
 @import './atomic/atomic';
 @import './alert/alert';
-@import './config/index.scss';
 @import './navbar/navbar';
 @import './region/region';
 @import './favourite_routes/favourite_routes';
@@ -13,4 +13,5 @@
 @import 'region_card/region_card';
 @import 'weather/weather';
 @import './banner/banner';
+@import './footer/footer';
 

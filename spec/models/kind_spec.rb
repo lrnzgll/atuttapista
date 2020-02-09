@@ -1,11 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Kind, type: :model do
-  let(:girolagovarese) {create(:route) }
+  let(:girolagovarese) { create(:route) }
   subject { described_class.new(name: 'strada', route: girolagovarese) }
 
   it "is valid with valid attributes" do
-    expect(subject).to be_valid    
+    expect(subject).to be_valid
   end
 
   it "is valid is name is in included types" do
@@ -15,7 +15,7 @@ RSpec.describe Kind, type: :model do
   it "is not valid without a name" do
     subject.name = nil
     expect(subject).to_not be_valid
-  end 
+  end
 
   it { should validate_uniqueness_of(:name).scoped_to(:route_id) }
 

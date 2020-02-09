@@ -11,19 +11,18 @@ class ApplicationController < ActionController::Base
 
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
- 
-
   private
 
   def set_user_cookie
     cookies.signed[:user_id] = current_user.id if current_user
   end
+
   def configure_permitted_parameters
     attributes = [:username]
     devise_parameter_sanitizer.permit(:sign_up, keys: attributes)
   end
 
-  def after_sign_out_path_for(resource_or_scope)
+  def after_sign_out_path_for(_resource_or_scope)
     root_path
   end
 

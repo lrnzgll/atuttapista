@@ -2,7 +2,7 @@ class RoutePolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
       scope.all
-    end    
+    end
   end
 
   def initialize(user, record)
