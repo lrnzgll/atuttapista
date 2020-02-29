@@ -9,6 +9,7 @@ class HomesController < ApplicationController
   end
 
   def search
-    @query = params[:search]
+    routes = Route.search(params[:search]).records
+    @content = Home::SearchFacade.new(routes)
   end
 end

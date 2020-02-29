@@ -1,0 +1,32 @@
+.card-component {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 2px;
+  margin: 15px 0;
+  border-width: 1px;
+}
+
+.card-component__img {
+  width: auto;
+  height: auto;
+  background-position: center;
+}
+
+.card-component__title {
+  font-weight: 700;
+}
+
+.card-component__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-top: transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card-component__button-text {
+  line-height: 40px;
+}

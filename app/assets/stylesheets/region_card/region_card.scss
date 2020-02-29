@@ -23,10 +23,10 @@
     box-shadow: inset 0 0 10px 2px rgba(250, 250, 250, 0.85);
   }
   &:hover{
-    h2{ 
-      color: rgb(240,240,240); 
+    h2{
+      color: rgb(240,240,240);
       text-shadow: 0 1px 1px rgba(20,20,20,0.8);}
-    opacity: 1;  
+    opacity: 1;
   }
 }
 .card-description {
@@ -39,4 +39,3 @@
     text-shadow: 0 1px 1px rgba(20,20,20,0.6);
   }
 }
-
