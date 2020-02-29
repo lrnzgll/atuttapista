@@ -1,3 +1,13 @@
-<section class="region_cards">
-  <%= render partial: "home_regions/routes_by_region", collection: @content.routes_by_region, as: :region %>
+<section class="container-fluid">
+  <div class="row">
+    <% @content.routes_by_region.each do |region| %>
+      <%= render(Card::CardComponent,
+        title: region.name,
+        link_text: "Visita",
+        link_url: region_path(region),
+        image_url: cl_image_tag("#{region.slug}.jpg", alt: region.name, height: "300", width: "600", quality: 50, crop: 'lfill', gravity: "auto", class: "card-component__img"),
+        styles: ["btn", "btn--stripe"],
+      )  %>
+    <% end %>
+  </div>
 </section>

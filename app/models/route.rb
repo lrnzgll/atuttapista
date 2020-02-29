@@ -1,9 +1,6 @@
 class Route < ApplicationRecord
-  include AlgoliaSearch
-
-  algoliasearch per_environment: true, disable_indexing: Rails.env.test? do
-    attributes :name, :description
-  end
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
 
   acts_as_votable
 
@@ -21,6 +18,13 @@ class Route < ApplicationRecord
   validates :difficulty, presence: true
   validates :distance, presence: true
   validates :views_counter, numericality: { greater_than_or_equal_to: 0 }
+
+  settings do
+    mappings dynamic: false do
+      indexes :name, type: :text
+      indexes :description, type: :text, analyzer: :english
+    end
+  end
 
   def add_view
     RouteAddViewJob.perform_later(id)

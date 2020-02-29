@@ -8,7 +8,7 @@
   line-height : normal;
   cursor : pointer;
   -moz-user-select : text;
-  
+
   &:-moz-focus-inner {
       padding : 0;
       border : 0;
@@ -25,10 +25,10 @@
 
 .btn {
   @include reset-button;
+  opacity: 100% !important;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px 30px 15px;
   background-color: $btn-background;
   color: $btn-color;
   border: 2px solid $border-color;
@@ -37,11 +37,11 @@
   font-weight: bold;
   margin-bottom: 16px;
   transition: all .5s ease;
-  
+
   &--stripe {
       overflow: hidden;
       position: relative;
-      
+
       &:after {
           content: '';
           display: block;
@@ -81,11 +81,11 @@
           }
       }
   }
-  
+
   &--large {
       width: 50%;
   }
-  
+
   &--radius {
       border-radius: 36px;
   }

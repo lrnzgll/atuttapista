@@ -4,17 +4,17 @@ require 'csv'
 
 
 
-Region.destroy_all
-Country.destroy_all
-County.destroy_all
-Town.destroy_all
-User.destroy_all
-Route.destroy_all
-Kind.destroy_all
-Surface.destroy_all
-RegionRoute.destroy_all
-RouteLocation.destroy_all
-Address.destroy_all
+# Region.destroy_all
+# Country.destroy_all
+# County.destroy_all
+# Town.destroy_all
+# User.destroy_all
+# Route.destroy_all
+# Kind.destroy_all
+# Surface.destroy_all
+# RegionRoute.destroy_all
+# RouteLocation.destroy_all
+# Address.destroy_all
 
 
 
@@ -27,16 +27,16 @@ class UpdateDatabase
 
   def initialize
   end
-  
+
   def call
-      create_users
-      create_countries
-      create_regions
-      create_counties
-      create_towns
+      # create_users
+      # create_countries
+      # create_regions
+      # create_counties
+      # create_towns
       # create_place_of_interest
       create_routes
-      create_addresses
+      # create_addresses
   end
 
   private
@@ -121,7 +121,7 @@ class UpdateDatabase
     PlaceOfInterest.import pl_int
     p 'place of interested created'
   end
-  
+
   def create_users
     p 'creating users'
     users = []
@@ -135,16 +135,16 @@ class UpdateDatabase
   def create_routes
     p 'creating routes'
     routes = []
-    Array.new(500) do |i|
+    Array.new(5) do |i|
       r = Route.new(name: "#{Faker::Address.city} to #{Faker::Address.city}", description: BetterLorem.p(rand(3..20), true, true ), difficulty: rand(1..10), distance: rand(3..100), gpx: 'bla', user: User.all.sample)
       r.region_routes.build(route: r, region: Region.all.sample)
       r.county_routes.build(route: r, county: County.all.sample)
       r.route_locations.build(name: Faker::Name.name, description: BetterLorem.p(rand(3..20), true, true ), route_id: r.id)
       routes << r
     end
-    Route.import routes, recursive: true
+    # Route.import routes, recursive: true
     p 'routes created'
-    create_kinds_surfaces
+    # create_kinds_surfaces
   end
 
   def create_kinds_surfaces
@@ -163,4 +163,3 @@ end
 
 
 UpdateDatabase.new.call
-

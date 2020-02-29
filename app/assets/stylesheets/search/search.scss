@@ -3,7 +3,7 @@
 }
 .search-routes-container{
   margin-top: 40px;
-  background: $background-normal; 
+  background: $background-normal;
   padding: 40px;
   box-shadow: 2px 1px rgba(68,79,137, 0.4);
 }
@@ -29,7 +29,14 @@
   margin: 10px;
   width: 200px;
   height: 250px;
-  background-color: rgba(68,79,137,1); 
+  background-color: rgba(68,79,137,1);
   border-radius: 5px;
   box-shadow: 2px 1px rgba(20,20,20,0.3);
+}
+
+.form-container{
+  position: relative;
+  width: 650px;
+  height: 70px;
+  margin: 0 auto;
 }

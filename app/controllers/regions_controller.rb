@@ -17,6 +17,6 @@ class RegionsController < ApplicationController
   private
 
   def set_region
-    @region ||= Region.find(params[:id])
+    @region ||= Region.friendly.find(params[:id])
   end
 end

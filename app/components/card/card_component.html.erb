@@ -1,0 +1,12 @@
+<div class= 'col-3'>
+  <div class="card-component__title">
+    <%= title %>
+  </div>
+  <div class="<%= class_wrap %>"  >
+      <%= link_to(link_url) do %>
+        <% if image? %>
+          <%= image_url %>
+        <% end %>
+      <% end %>
+  </div>
+</div>

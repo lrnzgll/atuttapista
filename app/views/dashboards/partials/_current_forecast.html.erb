@@ -5,7 +5,7 @@
     <p>Temperatura apparente: <%= forecast.apparent_temperature %>°</p>
     <p>Umidita': <%= forecast.humidity %> %</p>
     <p>Pressione: <%= forecast.pressure %> Pa</p>
-    <p>uvIndex: <%= forecast.uvIndex %></p>
+    <p>uvIndex: <%= forecast.uv_index %></p>
   </div>
 </div>
 <div class='col-xs-8' style="margin: 20px auto;">
@@ -18,7 +18,7 @@
           <p class='fz-sm'>Temperatura: <%= day.temperatureLow %>° - <%= day.temperatureHigh %>°</p>
           <p class='fz-sm'>Umidita': <%= day.humidity.to_f * 100 %> %</p>
           <p class='fz-sm'>Pressione: <%= day.pressure %> Pa</p>
-          <p class='fz-sm'>uvIndex: <%= day.uvIndex %></p>
+          <p class='fz-sm'>uvIndex: <%= day.uv_index %></p>
         </div>
       </div>
     <% end %>

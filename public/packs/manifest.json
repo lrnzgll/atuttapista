@@ -1,8 +1,8 @@
 {
   "application.css": "/packs/css/application-83b3e9ec.css",
   "application.css.map": "/packs/css/application-83b3e9ec.css.map",
-  "application.js": "/packs/js/application-e96b37261d939285f2ec.js",
-  "application.js.map": "/packs/js/application-e96b37261d939285f2ec.js.map",
+  "application.js": "/packs/js/application-d09e95b070f58f400918.js",
+  "application.js.map": "/packs/js/application-d09e95b070f58f400918.js.map",
   "custom.js": "/packs/js/custom-f446e802444aa64b3e51.js",
   "custom.js.map": "/packs/js/custom-f446e802444aa64b3e51.js.map",
   "dashboard.css": "/packs/css/dashboard-83b3e9ec.css",
@@ -15,13 +15,13 @@
         "/packs/css/application-83b3e9ec.css"
       ],
       "js": [
-        "/packs/js/application-e96b37261d939285f2ec.js"
+        "/packs/js/application-d09e95b070f58f400918.js"
       ],
       "css.map": [
         "/packs/css/application-83b3e9ec.css.map"
       ],
       "js.map": [
-        "/packs/js/application-e96b37261d939285f2ec.js.map"
+        "/packs/js/application-d09e95b070f58f400918.js.map"
       ]
     },
     "custom": {
